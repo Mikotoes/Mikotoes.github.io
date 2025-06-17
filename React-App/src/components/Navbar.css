@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+.navbar {
+    top: 1%;
+    left: 2%;
+    width: 96%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(128, 128, 128);
+    border-radius: 10px;
+}
+
+.navbutton {
+    margin-right: 10px;
+    background-color: grey;
+}
