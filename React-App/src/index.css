@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #24243a;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,6 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/*links*/
 a {
   font-weight: 500;
   color: rgb(80, 187, 206);
@@ -22,6 +23,15 @@ a:hover {
   color: rgb(83, 229, 255);
 }
 
+.textlink {
+  color: rgb(86, 89, 136);
+  text-decoration: inherit;
+}
+.textlink:hover {
+  color: rgb(83, 88, 156);
+}
+
+/*text*/
 body {
   margin: 0;
   display: flex;
@@ -30,30 +40,37 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
+h1, h2, h3 {
   line-height: 1.2;
+  font-family: monospace, sans-serif, Times;
+  letter-spacing: -2px;
+}
+
+h1 {
+  font-size: 4.0em;
+  color: rgb(80, 187, 206);
 }
 
 h2 {
-  font-size: 1.5em;
-  line-height: 1.2;
+  font-size: 3.0em;
+  color: rgb(59, 137, 151);
 }
 
 h3 {
-  font-size: 1.3em;
-  line-height: 1.2;
+  font-size: 2.5em;
+  color: rgb(49, 93, 114);
 }
 
 p {
-  font-size: 1.0em;
+  font-size: 1.2em;
   line-height: 1.6;
+  font-family: monospace, sans-serif, Times;
 }
 
 ul {
   list-style: none;
 }
-
+/*button*/
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -68,9 +85,29 @@ button {
 button:hover {
   border-color: rgb(80, 187, 206);
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+/*box*/
+.page, .profile, .sub_title, .para {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+}
+.page {
+  background-color: #323d55;
+  margin-top: 10%;
+}
+.sub_title {
+  margin-top: 20px;
+}
+.profileimg {
+  float: left;
+}
+img, .profileimg {
+  margin: 10px;
 }
 
 @media (prefers-color-scheme: light) {
